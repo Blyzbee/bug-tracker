@@ -17,8 +17,17 @@
     <main>
       <section class="card">
         <h1>Connexion</h1>
-        <form></form>
+        <form id="connection-form">
+          <label for="username">Nom d'utilisateur</label>
+          <input type="text" name="username" />
+          <label for="password">Mot de passe</label>
+          <input type="password" name="password" />
+          <button type="submit">Entrer</button>
+        </form>
       </section>
     </main>
+
+    <script type="module" src="./js/axios.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
