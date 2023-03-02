@@ -30,6 +30,10 @@ select {
   border: none;
 }
 
+select {
+  cursor: pointer;
+}
+
 button {
   background-color: white;
   border: none;
