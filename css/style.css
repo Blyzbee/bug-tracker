@@ -7,6 +7,10 @@ body {
   min-height: 100vh;
 }
 
+fieldset {
+  border: none;
+}
+
 ul,
 li {
   list-style-type: none;
