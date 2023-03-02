@@ -1,0 +1,13 @@
+main {
+  padding: 0 10px;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+}
+
+li {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}

@@ -1,12 +1,45 @@
-html,
-body,
-ul,
-li {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-ul,
-li {
+h1 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.card {
+  background-color: #aeb4f4;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+form,
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#inscription-div {
+  display: none;
+}
+
+#inscription-btn {
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+input {
+  margin-bottom: 18px;
+  width: 55vw;
+  max-width: 700px;
+}
+
+button {
+  margin-bottom: 24px;
 }

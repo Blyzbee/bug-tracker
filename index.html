@@ -11,23 +11,50 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <main>
       <section class="card">
-        <h1>Connexion</h1>
+        <h1 id="connexion-title">Connexion</h1>
         <form id="connection-form">
-          <label for="username">Nom d'utilisateur</label>
-          <input type="text" name="username" />
-          <label for="password">Mot de passe</label>
-          <input type="password" name="password" />
-          <button type="submit">Entrer</button>
+          <div>
+            <label for="username">Nom d'utilisateur</label>
+            <input
+              type="text"
+              name="username"
+              placeholder="Entrez un nom"
+              required
+            />
+          </div>
+          <div>
+            <label for="password">Mot de passe</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="Entrez un mot de passe"
+              required
+            />
+          </div>
+          <div id="inscription-div">
+            <label for="passwordConfirm">Confirmez le mot de passe</label>
+            <input
+              type="password"
+              name="passwordConfirm"
+              placeholder="Entrez à nouveau le mot de passe"
+            />
+          </div>
+          <button type="submit">Valider</button>
+          <span id="inscription-btn">Je n'ai pas de compte</span>
         </form>
       </section>
     </main>
 
-    <script type="module" src="./js/axios.js"></script>
-    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>
