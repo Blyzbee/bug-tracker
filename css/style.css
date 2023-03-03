@@ -5,6 +5,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #f6eee3;
   min-height: 100vh;
+  color: #111111;
 }
 
 fieldset {
@@ -24,7 +25,8 @@ label {
 }
 
 input,
-select {
+select,
+textarea {
   padding: 10px 13px;
   border-radius: 5px;
   border: none;
@@ -32,6 +34,10 @@ select {
 
 select {
   cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
 }
 
 button {
@@ -42,4 +48,10 @@ button {
   font-weight: bold;
   margin: auto;
   cursor: pointer;
+}
+
+#error-msg {
+  color: #ed6954;
+  font-weight: bold;
+  margin-bottom: 18px;
 }

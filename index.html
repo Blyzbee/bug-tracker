@@ -29,6 +29,7 @@
               <input
                 type="text"
                 name="username"
+                id="username"
                 placeholder="Entrez un nom"
                 required
               />
@@ -38,6 +39,7 @@
               <input
                 type="password"
                 name="password"
+                id="password"
                 placeholder="Entrez un mot de passe"
                 required
               />
@@ -47,9 +49,11 @@
               <input
                 type="password"
                 name="passwordConfirm"
+                id="passwordConfirm"
                 placeholder="Entrez à nouveau le mot de passe"
               />
             </div>
+            <span id="error-msg"></span>
             <button type="submit">Valider</button>
             <span id="inscription-btn">Je n'ai pas de compte</span>
           </form>
@@ -57,6 +61,7 @@
       </section>
     </main>
 
+    <script src="./js/defer.js"></script>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

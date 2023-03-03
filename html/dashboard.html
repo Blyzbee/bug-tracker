@@ -21,7 +21,7 @@
   <body>
     <main>
       <h1>Bug Tracker</h1>
-      <button>
+      <button id="btn-add-bug">
         <span class="material-symbols-outlined"> add </span>
       </button>
       <span>8 bugs, 4 en cours, 1 traité</span>
@@ -38,8 +38,27 @@
           <span>date</span>
         </li>
       </ul>
+      <div id="add-bug">
+        <fieldset>
+          <form id="add-bug-form">
+            <label for="title">Titre</label>
+            <input type="text" name="title" id="title" required />
+            <label for="description">Description</label>
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+            <span id="error-msg"></span>
+            <button type="submit">Ajouter</button>
+          </form>
+        </fieldset>
+      </div>
     </main>
 
+    <script src="../js/defer.js"></script>
     <script type="module" src="../js/dashboard.js"></script>
   </body>
 </html>
