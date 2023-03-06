@@ -1,6 +1,9 @@
+body {
+  overflow-x: hidden;
+}
+
 main {
   padding: 0 2vw;
-  overflow-x: hidden;
 }
 
 h2 {
@@ -36,7 +39,6 @@ li > p {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -52,4 +54,9 @@ li > p {
 #add-bug input,
 #add-bug textarea {
   margin-bottom: 18px;
+}
+
+#btn-add-bug {
+  display: flex;
+  align-items: center;
 }

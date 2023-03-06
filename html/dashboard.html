@@ -19,18 +19,25 @@
     <link rel="stylesheet" href="../css/dashboard.css" />
   </head>
   <body>
-    <main>
+    <header>
       <h1>Bug Tracker</h1>
+      <button id="logout-btn">
+        <span class="material-symbols-outlined"> logout </span>
+      </button>
+      <span id="recap-bugs"></span>
+    </header>
+    <main>
       <button id="btn-add-bug">
+        Ajouter un bug
         <span class="material-symbols-outlined"> add </span>
       </button>
-      <span>8 bugs, 4 en cours, 1 traité</span>
-      <ul>
+      <ul id="bugs-list">
         <li>
           <h2>Titre du bug</h2>
-          <select>
-            <option value="pending">En cours</option>
-            <option value="done">Traité</option>
+          <select id="bug-state">
+            <option value="0">Non traité</option>
+            <option value="1">En cours</option>
+            <option value="2">Traité</option>
           </select>
           <span class="material-symbols-outlined"> close </span>
           <p>Description</p>
